@@ -76,7 +76,6 @@ class KMeansClustering:
                 euc=(sum((data[i]-self.centroids[j])**2)**0.5)
                 dist.append(euc)
             clus.append(np.argmin(dist))
-        self.clus=clus
         return(np.array(clus))
 
 
